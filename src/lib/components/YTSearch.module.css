@@ -1,0 +1,59 @@
+.YTSearch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    margin-top: 30px;
+    min-width: 200px;
+    max-width: 500px;
+    width: -webkit-fill-available;
+    width: fill-available;
+    /* can't find anything better than this one right now and it is late */
+    margin-right: 15px;
+    margin-left: 15px;
+
+}
+
+.YTSearch input {
+    box-sizing: border-box;
+    padding-left: 12px;
+    height: 40px;
+    flex: 1;
+    background: #FFFFFF;
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: #CCCCCC;
+    box-shadow: inset 0px 2px 2px #EEEEEE;
+    border-radius: 100px 0px 0px 100px;
+    color: var(--text-secondary);
+}
+
+.YTSearch button {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 6px;
+
+    width: 64px;
+    height: auto;
+
+    background: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    border-radius: 0px 100px 100px 0px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.YTSearch button:hover {
+    background-color: #f0f0f0;
+}
+
+.YTSearch button:focus {
+    background-color: #e9e9e9;
+}

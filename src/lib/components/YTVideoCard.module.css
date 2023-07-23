@@ -1,0 +1,134 @@
+.ytVideoCard {
+    margin-top: 30px;
+    max-width: 359px;
+    position: relative;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.ytVideoCard .thumbnailImage {
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+}
+
+.ytVideoCard .thumbnailImage .duration {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    padding: 3px 4px;
+    gap: 6px;
+
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+
+    color: #FFFFFF;
+}
+
+.ytVideoCard .thumbnailImage img {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.ytVideoCard .videoDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+}
+
+.ytVideoCard .videoDetails .channelAvatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 1000px;
+}
+
+.ytVideoCard .videoDetails .titleMeta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    text-align: left;
+    flex: 1;
+}
+
+.ytVideoCard .videoDetails .contextMenu {
+    opacity: 0;
+}
+
+.ytVideoCard:hover .videoDetails .contextMenu {
+    opacity: 1;
+}
+
+.ytVideoCard .videoDetails .titleMeta .videoTitle {
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--text-primary);
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.ytVideoCard .videoDetails .titleMeta .metaData {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-secondary);
+}
+
+.ytVideoCard .videoDetails .titleMeta .metaData .channel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    column-gap: 6px;
+    flex-wrap: wrap;
+}
+
+.ytVideoCard .videoDetails .titleMeta .metaData .channel:hover {
+    color: var(--text-primary);
+}
+
+.ytVideoCard .videoDetails .titleMeta .metaData .meta {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    column-gap: 6px;
+    flex-wrap: wrap;
+}

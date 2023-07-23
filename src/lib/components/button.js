@@ -1,20 +1,10 @@
 import React from 'react';
+import css from './button.module.css';
 
 const Button = (props) => {
     
     return (
-        <button 
-            className="dribbble-button" 
-            style={{
-                backgroundColor: 'white',
-                color: 'black',
-                fontFamily: 'Comic Sans MS',
-                border: 'none',
-                padding: '16px',
-                borderRadius: '8px'
-
-            }}
-        >
+        <button className={css.dribbbleButton}>
             {props.label}
         </button>
     )
